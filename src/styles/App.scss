@@ -1,0 +1,66 @@
+@import './_variables';
+@import "./font-awesome/fontawesome.scss";
+@import "./font-awesome/solid.scss";
+
+body {
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: $responsiveWidthMax) {
+  .App {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+  .exercise-banner {
+    h3 {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: $responsiveWidthMax) {
+  .App {
+    width: 1000px;
+  }
+}
+
+.App {
+  margin: auto;
+  font-family: $fontFamily;
+}
+
+.exercise-banner {
+  position: relative;
+  margin: 10px 0;
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    height: 100%;
+    z-index: -1;
+    background-color: $backgroundBlue;
+  }
+  h3 {
+    color: $textWhite;
+    padding: 20px 0;
+  }
+}
+
+.movie-poster-wrapper {
+  border: 1px solid $filterBorderColor;
+  padding: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.number-of-posters {
+  padding: 20px;
+  border: 1px solid $filterBorderColor;
+}

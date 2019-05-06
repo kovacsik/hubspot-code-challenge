@@ -1,0 +1,28 @@
+@import './_variables';
+
+@media only screen and (max-width: $responsiveWidthMobile) {
+  .poster-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: $responsiveWidthMobile) {
+  .poster-wrapper {
+    width: 33%;
+  }
+}
+
+.poster-wrapper {
+  box-sizing: border-box;
+  padding: 10px;
+  word-wrap: break-word;
+  img {
+    width: 100%;
+  }
+  .poster-title {
+    padding: 10px 0;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+}

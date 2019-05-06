@@ -1,0 +1,46 @@
+@import './_variables';
+
+@media only screen and (max-width: $responsiveWidthMobile) {
+  .flexy-testimonial {
+    padding-bottom: 20px;
+    flex-direction: column;
+    div {
+      width: 100%;
+      padding: 10px 0;
+    }
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: $responsiveWidthMobile) {
+  .flexy-testimonial {
+    padding-bottom: 50px;
+    flex-direction: row;
+    div {
+      width: 50%;
+      padding: 10px;
+    }
+  }
+}
+
+.flexy-testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: DodgerBlue;
+    color: white;
+  }
+  #testimonial-author {
+    font-weight: bold;
+  }
+}
